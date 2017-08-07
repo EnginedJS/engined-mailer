@@ -1,0 +1,27 @@
+{
+  "name": "engined-mailer",
+  "version": "0.0.1",
+  "description": "Mailer agent service for engined",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnginedJS/engined-mailer.git"
+  },
+  "keywords": [
+    "service",
+    "engined",
+    "email"
+  ],
+  "engines": {
+    "node": ">=7.4"
+  },
+  "author": "Leon Lin <leonlin14@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EnginedJS/engined-mailer/issues"
+  },
+  "homepage": "https://github.com/EnginedJS/engined-mailer#readme"
+}
