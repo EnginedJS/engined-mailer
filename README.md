@@ -43,7 +43,15 @@ Here is example to get agent for specific backend to save file:
 ```javascript
 
 // Using local mailer backend
-let localAgent = this.getContext('Mailer').getAgent('local');
+let localAgent = this.getContext().get('Mailer').getAgent('default');
+
+// Send Email
+localAgent.sendMailWithTokens({
+	from: config.get('mailer').sender.name + ' <' + config.get('mailer').sender.address + '>',
+	to: 'example@email.com',
+	subject: 'test',
+	html: '<p>1234</p>'
+})
 
 ```
 
@@ -59,4 +67,4 @@ this.getContext('Mailer').registerAgent('local', agent);
 Licensed under the MIT License
 
 ## Authors
-Copyright(c) 2017 Leon Lin（林為志） <<leonlin14@gmail.com>>
+Copyright(c) 2017 Leon Lin（林為志） <leonlin14@gmail.com>
