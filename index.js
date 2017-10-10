@@ -1,5 +1,4 @@
 const { Service } = require('engined');
-const AgentManager = require('./lib/agent_manager');
 
 module.exports = (opts = {}) => class extends Service {
 
@@ -8,11 +7,10 @@ module.exports = (opts = {}) => class extends Service {
 	}
 
 	async start() {
-		let manager = new AgentManager();
-		this.getContext().set('Mailer', manager);
+		this.getContext().assert('Mailer');
 	}
 
 	async stop() {
-		this.getContext().set('Mailer', undefined);
+		this.getContext().remove('Mailer');
 	}
 }
