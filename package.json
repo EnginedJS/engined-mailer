@@ -1,6 +1,6 @@
 {
   "name": "engined-mailer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mailer agent service for engined",
   "main": "index.js",
   "scripts": {
